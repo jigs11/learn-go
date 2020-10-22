@@ -14,7 +14,7 @@ func Hello(name string, language string) string {
 		name = "World"
 	}
 
-	return prefix + name + "!"
+	return greetingPrefix(language) + name + "!"
 }
 
 func greetingPrefix(language string) (prefix string) {
