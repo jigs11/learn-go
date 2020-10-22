@@ -4,9 +4,11 @@ import "fmt"
 
 const spanish = "Spanish"
 const french = "French"
+const sanskrit = "Sanskrit"
 const englishHelloPrefix = "Hello, "
 const spanishHelloPrefix = "Hola, "
 const frenchHelloPrefix = "Bonjour, "
+const sanskritHelloPrefix = "Namaste, "
 
 // Hello will use the parameters to welcome the user
 func Hello(name string, language string) string {
@@ -23,6 +25,8 @@ func greetingPrefix(language string) (prefix string) {
 		prefix = frenchHelloPrefix
 	case spanish:
 		prefix = spanishHelloPrefix
+	case sanskrit:
+		prefix = sanskritHelloPrefix
 	default:
 		prefix = englishHelloPrefix
 	}
