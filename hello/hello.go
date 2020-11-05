@@ -10,7 +10,7 @@ const spanishHelloPrefix = "Hola, "
 const frenchHelloPrefix = "Bonjour, "
 const sanskritHelloPrefix = "Namaste, "
 
-// Hello will use the parameters to welcome the user
+// Hello uses the parameters to welcome the user
 func Hello(name string, language string) string {
 	if name == "" {
 		name = "World"
